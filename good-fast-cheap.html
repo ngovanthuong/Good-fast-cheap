@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form name="check">
+    <input type="checkbox" name="tot" onclick="return demo()"> Good <br>
+    <input type="checkbox" name="nhanh" onclick="return demo()"> Fast <br>
+    <input type="checkbox" name="re" onclick="return demo()"> Cheap <br>
+
+</form>
+<script>
+    function demo(){
+        let dem=0;
+        if (document.check.tot.checked){
+            dem=dem+1;
+        }
+        if (document.check.nhanh.checked){
+            dem=dem+1;
+        }
+        if(document.check.re.checked) {
+            dem=dem+1;
+        }
+        if(dem===3) {
+            alert("chi chon duoc 2 checkbox");
+            document.check;
+            return false;
+        }
+    }
+
+
+</script>
+</body>
+</html>
